@@ -1,0 +1,49 @@
+:root {
+    --white: #ffffff;
+    --black: #3c4155;
+    --gray: #d1d7d5;
+    --dark-green: #338143;
+    --medium-green: #ddefdf;
+    --light-green: #f1fcf4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black);
+    padding: 5%;
+}
+
+h1, h4, p {
+    text-align: center;
+}
+
+.study-area,
+.areas {
+    display: grid;
+    gap: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    padding: 15px;
+    background-color: var(--light-green);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.card-container:hover {
+    background-color: var(--medium-green);
+    transform: scale(1.02);
+}
