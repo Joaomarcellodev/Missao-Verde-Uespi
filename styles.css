@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--black);
+}
+
 :root {
     --white: #ffffff;
     --black: #3c4155;
@@ -34,14 +45,6 @@
     padding: 0.5rem 1rem;
 }
 
-@media (min-width: 700px) {
-    .header-center nav ul {
-        gap: 1.0rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
 #mission {
     display: flex;
     flex-direction: column;
@@ -74,29 +77,6 @@
     font-size: 0.9rem;
     margin-top: 5px;
     font-weight: bold;
-}
-
-@media(mix-width: 700px) {
-    #mission img{
-        width: 90%;
-        height: auto;
-    }
-    #mission p {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--black);
-    padding: 5%;
 }
 
 h1, h4, p {
@@ -148,6 +128,28 @@ h1, h4, p {
     display: grid;
     gap: 1rem;
 }
+
+
+@media (min-width: 700px) {
+    .header-center nav ul {
+        gap: 1.0rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(mix-width: 700px) {
+    #mission img{
+        width: 90%;
+        height: auto;
+    }
+    #mission p {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
 
 @media (min-width: 700px) {
     .areas {
