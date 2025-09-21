@@ -1,163 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    color: var(--black);
+  color: var(--black);
 }
 
 :root {
-    --white: #ffffff;
-    --black: #3c4155;
-    --gray: #d1d7d5;
-    --dark-green: #338143;
-    --medium-green: #ddefdf;
-    --light-green: #f1fcf4;
+  --white: #ffffff;
+  --black: #3c4155;
+  --gray: #d1d7d5;
+  --dark-green: #338143;
+  --medium-green: #ddefdf;
+  --light-green: #f1fcf4;
 }
 
 .header-logo .logo {
-    max-height: 60px;
-    position: absolute;
-    left: 0;
-    top: 0;
+  max-height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.header-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    transform: translateY(-85px);
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  transform: translateY(-85px);
 }
-.header-center nav ul{
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    padding: 0;
-    margin: 0;
+.header-center nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
 }
 .header-center nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--dark-green);
-    padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark-green);
+  padding: 0.5rem 1rem;
 }
 
 #mission {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: auto;
-    margin-bottom: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto;
+  margin-bottom: 5rem;
 }
 
 #mission h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-#mission p{
-    max-width: 60rem;
-    width: 90%;
-    text-align: justify;
-    margin-bottom: 2rem;
-    line-height: 1.9;
-    font-size: 1.1rem;
+#mission p {
+  max-width: 60rem;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 2rem;
+  line-height: 1.9;
+  font-size: 1.1rem;
 }
 
 #mission img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2rem;
-    margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  margin-top: 2rem;
 }
 
 #mission figcaption {
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
-h1, h4, p {
-    text-align: center;
+#description-title {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h4,
+p {
+  text-align: center;
 }
 
 .study-area,
 .areas {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-
-    padding: 15px;
-    background-color: var(--light-green);
-    border: 1px solid var(--gray);
-    border-radius: 10px;
-    transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--light-green);
+  border: 1px solid var(--gray);
+  border-radius: 1.2rem;
+  transition: all 300ms ease;
 }
 
 .card-container:hover {
-    background-color: var(--medium-green);
-    transform: scale(1.02);
+  background-color: var(--medium-green);
+  transform: scale(1.02);
 }
 
 .scientific-team {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .profile-img {
-    width: 80px;
-    border-radius: 50px;
+  width: 80px;
+  border-radius: 50px;
 }
 
 .sector {
-    color: var(--dark-green);
+  color: var(--dark-green);
 }
 
 .team {
-    display: grid;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .header-center nav ul {
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
+@media (mix-width: 700px) {
+  #mission img {
+    width: 90%;
+    height: auto;
+  }
+  #mission p {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
 
 @media (min-width: 700px) {
-    .header-center nav ul {
-        gap: 1.0rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
+  .areas {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-@media(mix-width: 700px) {
-    #mission img{
-        width: 90%;
-        height: auto;
-    }
-    #mission p {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
-
-
-@media (min-width: 700px) {
-    .areas {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .team {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .team {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
