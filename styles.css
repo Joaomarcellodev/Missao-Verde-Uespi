@@ -5,7 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body,html {
+body {
   color: var(--black);
   width: 100%;
   overflow-x: hidden;
@@ -20,80 +20,76 @@ body,html {
   --light-green: #f1fcf4;
 }
 
-.header-logo .logo {
-  max-height: 6rem;
-  position: absolute;
-  left: 0;
-  top: 0;
+header {
+  width: 90%;
+  justify-self: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .header-center {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
 }
+
 .header-center nav ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
-  padding: 0;
-  margin: 0;
+  gap: 2rem;
 }
+
 .header-center nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: var(--dark-green);
-  padding: 0.5rem 1rem;
 }
 
-#mission {
-  margin-top: 2rem;
+.header-center li {
+  transition: all 300ms ease;
+}
+
+.header-center li:hover {
+  transform: scale(1.04);
+}
+
+.mission {
+  width: 90%;
+  justify-self: center;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  justify-content: center;
 }
 
-#mission h1 {
+.mission h1 {
   margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-#mission p {
-  max-width: 60rem;
-  width: 90%;
+.mission p {
   text-align: justify;
   margin-bottom: 2rem;
   line-height: 1.9;
   font-size: 1.1rem;
 }
 
-#mission img {
-  max-width: 100%;
-  height: auto;
+.mission img {
+  width: 100%;
   border-radius: 2rem;
-  margin-top: 2rem;
 }
 
-#mission figcaption {
+.mission figcaption {
   font-size: 0.9rem;
   margin-top: 1rem;
   font-weight: bold;
-}
-
-.description-title {
-  margin-top: 0.4rem;
-  margin-bottom: 1rem;
   text-align: center;
-}
-
-.title {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.study-area,
-.areas {
-  display: grid;
 }
 
 .card-container {
@@ -102,6 +98,7 @@ body,html {
   justify-content: center;
   align-items: center;
   text-align: center;
+
   margin: 1rem;
   padding: 1rem;
   background-color: var(--light-green);
@@ -115,73 +112,60 @@ body,html {
   transform: scale(1.02);
 }
 
-.scientific-team {
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description-title {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.scientific-team, .study-area{
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
+
+  width: 90%;
+  justify-self: center;
+}
+
+.team, .areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .profile-img {
-  width: 80px;
+  width: 5rem;
   border-radius: 50px;
 }
 
-.sector {
+.sector{
   color: var(--dark-green);
 }
 
-.team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.areas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-@media (min-width: 700px) {
-  .header-center nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (min-width: 600px) {
+    header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
   }
 }
 
 @media (min-width: 700px) {
-  #mission img {
-    width: 50%;
-    height: auto;
- 
-  }
-  #mission p {
-    width: 90%;
+  .mission p {
+    width: 100%;
     font-size: 1rem;
     line-height: 1.7;
   }
-}
 
-@media (min-width: 400px) {
-  #mission img {
-    width: 90%;
-    height: auto;
- 
-  }
-  #mission p {
-    width: 80%;
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-}
-
-@media (min-width: 700px) {
-  .areas {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .mission img {
+    width: 100%;
   }
 
-  .team {
+  .areas, .team {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
