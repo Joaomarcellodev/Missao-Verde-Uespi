@@ -123,7 +123,8 @@ header {
   text-align: center;
 }
 
-.scientific-team, .study-area{
+.scientific-team,
+.study-area {
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -132,7 +133,8 @@ header {
   justify-self: center;
 }
 
-.team, .areas {
+.team,
+.areas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -142,12 +144,100 @@ header {
   border-radius: 50px;
 }
 
-.sector{
+#background-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+#form-container {
+  background-color: var(--medium-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+#form-container h2 {
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-input label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+.container-input input,
+.container-input textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.container-input select {
+  padding: 0.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#radio {
+  display: flex;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#button-submit,
+#clean {
+  padding: 0.4rem 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--dark-green);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.sector {
   color: var(--dark-green);
 }
 
 @media (min-width: 600px) {
-    header {
+  header {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -165,7 +255,8 @@ header {
     width: 100%;
   }
 
-  .areas, .team {
+  .areas,
+  .team {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
