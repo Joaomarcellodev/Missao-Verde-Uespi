@@ -310,3 +310,38 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media (max-width: 450px) {
+  .form-title {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .container-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-input input {
+    width: 90%;
+  }
+
+  .container-input textarea {
+    width: 90%;
+  }
+
+  .container-input select {
+    width: 90%;
+  }
+
+  #button-container button {
+    padding: 0.4rem 3rem;
+  }
+
+  #radio-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+  }
+}
