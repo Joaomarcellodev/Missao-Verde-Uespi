@@ -172,10 +172,13 @@ header {
   margin-bottom: 2rem;
 }
 
-#form-container h2 {
+.form-title {
+  margin-bottom: 2rem;
+}
+
+#form-cotainer h2 {
   text-align: center;
   color: var(--black);
-  margin-bottom: 2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -235,6 +238,40 @@ header {
 .sector {
   color: var(--dark-green);
 }
+
+#footer {
+  margin-top: 4rem;
+  background-color: var(--dark-green);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#names, #emails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#social-media {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.icon img{
+  color: var(--dark-green);
+  width: 2rem;
+}
+
+
+
+
 
 @media (min-width: 600px) {
   header {
