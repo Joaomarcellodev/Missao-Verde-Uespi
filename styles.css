@@ -327,29 +327,65 @@ header img {
 }
 
 @media (max-width: 450px) {
-  .form-title {
-    font-size: 0.8rem;
+  /* Centraliza títulos */
+  .form-title,
+  .mission h1,
+  .description-title,
+  .title {
     text-align: center;
   }
 
+  /* Inputs centralizados */
   .container-input {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .container-input input,
   .container-input textarea,
   .container-input select {
     width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Botões centralizados */
+  #button-container {
+    justify-content: center;
   }
 
   #button-container button {
     padding: 0.4rem 2rem;
   }
 
+
   #radio {
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.3rem;
+  }
+
+  .mission,
+  .scientific-team,
+  .study-area,
+  #form-container,
+  .card-container,
+  .footer,
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+  .details-container {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .contact {
+    align-items: center;
   }
 }
