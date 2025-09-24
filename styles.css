@@ -80,7 +80,7 @@ header {
   font-size: 1.1rem;
 }
 
-.mission img {
+.mission figure, img {
   width: 100%;
   border-radius: 2rem;
 }
@@ -239,7 +239,17 @@ header {
   color: var(--dark-green);
 }
 
-#footer {
+.footer {
+  background-color: var(--light-green);
+  padding: 2rem;
+}
+
+.uespi-logo {
+  /* display: flex; */
+
+}
+
+/* #footer {
   margin-top: 4rem;
   background-color: var(--dark-green);
   color: var(--white);
@@ -267,8 +277,7 @@ header {
 .icon img{
   color: var(--dark-green);
   width: 2rem;
-}
-
+} */
 
 
 
