@@ -185,7 +185,7 @@ header img {
   margin-bottom: 2rem;
 }
 
-#form-container h2 {
+#form-cotainer h2 {
   text-align: center;
   color: var(--black);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -315,12 +315,6 @@ header img {
   .form-title {
     font-size: 0.8rem;
     text-align: center;
-  }
-
-  .mission p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .container-input {
